@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
 
 const robotoSans = Roboto({
   variable: "--font-geist-sans",
@@ -15,7 +14,7 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Winnerezy",
+  title: "Winnerx0",
   description: "Winner Agbonikpeya Portfolio",
 };
 
@@ -27,9 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robotoSans.variable} ${robotoMono.variable} antialiased dark`}
+        className={`${robotoSans.variable} ${robotoMono.variable} antialiased dark flex items-center justify-center`}
       >
-        <Header/>
         {children}
       </body>
     </html>
