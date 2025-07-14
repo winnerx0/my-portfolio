@@ -23,7 +23,7 @@ const page = () => {
         </p>
         <Link
           download
-          href={"/resume.pdf"}
+          href={"/Agbonikpeya-Eromoigbe-Winner-Resume.docx"}
           target="parent"
           className="text-gray-400 underline"
         >
@@ -50,6 +50,12 @@ const page = () => {
         <ul className="text-gray-400">
           <li>
             <p>
+              <Link href={"https://simon-therapist.vercel.app/"}>• Simon</Link>{" "}
+              - AI Theriapist
+            </p>
+          </li>
+          <li>
+            <p>
               <Link href={"https://kraft-gg.vercel.app/"}>• Kraft</Link> - AI
               Flashcard Web App
             </p>
@@ -73,6 +79,16 @@ const page = () => {
       <div className="flex flex-col gap-4 w-full mt-16">
         <h1 className="text-xl font-bold">Work</h1>
         <div>
+          <h2 className="text-gray-400">Tredbase June 2025 - Present</h2>
+          <p className="text-gray-400">Buiding and maintaining backend servers efficiently and effectively</p>
+        </div>
+        <hr />
+        <div>
+          <h2 className="text-gray-400">Luminevent June 2025 - July 2025</h2>
+          <p className="text-gray-400">Built robust backend services</p>
+        </div>
+        <hr />
+        <div>
           <h2 className="text-gray-400">TekkTopia Sept 2024 - Jan 2025</h2>
           <p className="text-gray-400">Built web applications for businesses</p>
         </div>
@@ -82,7 +98,7 @@ const page = () => {
       <div className="flex flex-col gap-4 w-full mt-16">
         <h1 className="text-xl font-bold">Interests</h1>
         <h2 className="text-gray-400">
-          I am into backend and microservices using spring boot and node JS
+          I am into backend and microservices using spring boot and node js
         </h2>
         <h2 className="text-gray-400">
           I use Go to build cli tools e.g A file uploading tool, file
