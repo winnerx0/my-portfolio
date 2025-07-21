@@ -100,6 +100,10 @@ const page = () => {
         <h2 className="text-gray-400">
           I am into backend and microservices using spring boot and node js
         </h2>
+        <h2 className="text-gray-400">
+          I use Go to build cli tools e.g A file uploading tool, file
+          compression etc.
+        </h2>
         <h2 className="text-gray-400">I like using neovim and the terminal</h2>
         <hr />
       </div>
