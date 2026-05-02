@@ -1,13 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Cormorant_Garamond } from "next/font/google";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { MdEmail } from "react-icons/md";
 
+const elegantSerif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const projects = [
+  {
+    name: "Kron",
+    href: "https://github.com/winnerx0/kron",
+    description: "Cron scheduling tool built with TypeScript.",
+  },
+  {
+    name: "Histr",
+    href: "https://github.com/winnerx0/histr",
+    description: "Java app for managing transaction records.",
+  },
+  {
+    name: "Envault",
+    href: "https://github.com/winnerx0/envault",
+    description:
+      "Go CLI for backing up environment variables to private GitHub repositories.",
+  },
+  {
+    name: "Kivia",
+    href: "https://github.com/kivia-observe/kivia",
+    description: "Go service for logging and observing server traffic.",
+  },
+];
+
 const page = () => {
   return (
-    <section className="w-full px-4 max-w-5xl">
-      <div className="flex flex-col gap-4 w-full mt-16">
+    <section className="w-full px-4 max-w-3xl pb-20">
+      <div
+        className={`${elegantSerif.className} flex flex-col gap-4 w-full mt-16`}
+      >
         <Image
           src={"/me.jpg"}
           width={50}
@@ -16,23 +48,26 @@ const page = () => {
           className="rounded-full"
         />
         <h1 className="text-xl font-bold">Winner</h1>
-        <h2 className="text-[clamp(20px,1.3vw,3rem)]">Software Engineer</h2>
+        <h2 className="text-[clamp(20px,1.3vw,3rem)]">
+          Software Engineer | Backend Systems
+        </h2>
         <p className="text-gray-400">
-          I'm Winner a software developer passionate about solving problems and
-          software solutions.
+          I build backend systems, developer tools, automation workflows, and
+          practical AI products.
         </p>
         <p className="text-gray-400">
-          I primarily work with Java, Typescript and Go. But I am interested in
-          a lot of other technologies.
+          I primarily work with Java, TypeScript, and Go, with recent projects
+          spanning scheduling, rate limiting, database tooling, CLIs, Telegram
+          bots, and local file sharing.
         </p>
-        <Link
+        {/* <Link
           download
           href={"/resume.pdf"}
           target="_blank"
           className="text-gray-400 underline"
         >
           Resume
-        </Link>
+        </Link> */}
         <div className="flex gap-2">
           <Link
             href={"https://www.linkedin.com/in/eromoigbe-agbonikpeya/"}
@@ -55,39 +90,22 @@ const page = () => {
       <div className="flex flex-col gap-4 w-full mt-16">
         <h1 className="text-xl font-bold">Projects</h1>
         <ul className="text-gray-400 divide-y">
-          <li className="py-4">
-            <Link
-              href="https://notivue.vercel.app/"
-              className="underline-offset-4 hover:underline transition-all duration-200"
-            >
-              • Notivue
-            </Link>{" "}
-            - AI Meeting Analyzer
-          </li>
-
-          <li className="py-4">
-            <Link
-              href="https://simon-therapist.vercel.app/"
-              className="underline-offset-4 hover:underline transition-all duration-200"
-            >
-              • Simon
-            </Link>{" "}
-            - AI Therapist
-          </li>
-
-          <li className="py-4">
-            <Link
-              href="https://lyra-pg.vercel.app/"
-              className="underline-offset-4 hover:underline transition-all duration-200"
-            >
-              • Lyra
-            </Link>{" "}
-            - Real time database visualization tool
-          </li>
+          {projects.map((project) => (
+            <li key={project.name} className="py-4">
+              <Link
+                href={project.href}
+                target="_blank"
+                className="text-white underline-offset-4 hover:underline transition-all duration-200"
+              >
+                • {project.name}
+              </Link>{" "}
+              - {project.description}
+            </li>
+          ))}
         </ul>
       </div>
 
-      <div className="flex flex-col gap-4 w-full mt-16">
+      {/* <div className="flex flex-col gap-4 w-full mt-16">
         <h1 className="text-xl font-bold">Work</h1>
         <div>
           <h2 className="text-gray-400">Tredbase June 2025 - Present</h2>
@@ -101,7 +119,7 @@ const page = () => {
           <h2 className="text-gray-400">TekkTopia Sept 2024 - Jan 2025</h2>
         </div>
         <hr />
-      </div>
+      </div> */}
     </section>
   );
 };
