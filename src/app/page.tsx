@@ -13,8 +13,9 @@ const elegantSerif = Cormorant_Garamond({
 const projects = [
   {
     name: "Kron",
-    href: "https://github.com/winnerx0/kron",
-    description: "Cron scheduling tool built with TypeScript.",
+    href: "https://kron.winnerx0.dev",
+    description:
+      "Schedule, run, and monitor HTTP cron jobs with execution history.",
   },
   {
     name: "Histr",
@@ -29,8 +30,9 @@ const projects = [
   },
   {
     name: "Kivia",
-    href: "https://github.com/kivia-observe/kivia",
-    description: "Go service for logging and observing server traffic.",
+    href: "https://kivia-observe.vercel.app",
+    description:
+      "Drop-in API observability with live traffic, latency, and status code analytics.",
   },
 ];
 
