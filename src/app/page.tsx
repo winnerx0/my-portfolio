@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Histr",
     href: "https://histr.vercel.app",
-    description: "Java app for managing transaction records.",
+    description: "Manage transactions across multiple banks.",
   },
   {
     name: "Envault",
