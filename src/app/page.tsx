@@ -17,9 +17,15 @@ const projects = [
     description:
       "Schedule, run, and monitor HTTP cron jobs with execution history.",
   },
+  //   {
+  //   name: "Kivia",
+  //   href: "https://kivia-observe.vercel.app",
+  //   description:
+  //     "Drop-in API observability with live traffic, latency, and status code analytics.",
+  // },
   {
     name: "Histr",
-    href: "https://github.com/winnerx0/histr",
+    href: "https://histr.vercel.app",
     description: "Java app for managing transaction records.",
   },
   {
@@ -27,12 +33,6 @@ const projects = [
     href: "https://github.com/winnerx0/envault",
     description:
       "Go CLI for backing up environment variables to private GitHub repositories.",
-  },
-  {
-    name: "Kivia",
-    href: "https://kivia-observe.vercel.app",
-    description:
-      "Drop-in API observability with live traffic, latency, and status code analytics.",
   },
 ];
 

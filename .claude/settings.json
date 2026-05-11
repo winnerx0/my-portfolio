@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:kron.winnerx0.dev)",
+      "WebFetch(domain:kivia-observe.vercel.app)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
