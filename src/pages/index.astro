@@ -1,0 +1,175 @@
+---
+import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import "../styles/global.css";
+
+const projects = [
+    {
+        name: "Kron",
+        label: "Scheduling tool",
+        description: "A cron scheduling tool.",
+        href: "https://github.com/winnerx0/kron",
+    },
+    {
+        name: "Kivia",
+        label: "Server observability",
+        description: "A good way to log your server traffic.",
+        href: "https://github.com/winnerx0/kivia",
+    },
+    {
+        name: "Calvera",
+        label: "Pull request intelligence",
+        description:
+            "Analysis as PR comments, with RAG-powered conversations over diffs.",
+        href: "https://github.com/winnerx0/calvera",
+    },
+    {
+        name: "Pierre",
+        label: "Media pipeline",
+        description: "A video transcription pipeline.",
+        href: "https://github.com/winnerx0/pierre",
+    },
+    {
+        name: "Revi",
+        label: "Research agents",
+        description: "A research agent pipeline using LangGraph.",
+        href: "https://github.com/winnerx0/revi",
+    },
+    {
+        name: "Mirai",
+        label: "Agent harness",
+        description: "An agent harness with MCP integration support.",
+        href: "https://github.com/winnerx0/mirai",
+    },
+    {
+        name: "Coil",
+        label: "Build tooling",
+        description: "A mini build system.",
+        href: "https://github.com/winnerx0/coil",
+    },
+];
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-[#0d0e0c]">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta
+            name="description"
+            content="Winner Agbonikpeya — Software Engineer"
+        />
+        <title>Winner Agbonikpeya</title>
+    </head>
+    <body class="m-0 min-w-80 bg-[#0d0e0c] font-['Plus_Jakarta_Sans'] text-[#e9e9e3]">
+        <main class="mx-auto w-[calc(100%_-_40px)] max-w-[510px] pb-16 max-[480px]:w-[calc(100%_-_32px)]">
+            <nav
+                class="flex justify-end gap-2.5 py-[42px] pb-[52px] font-['DM_Mono'] text-[9px] tracking-[.11em] uppercase max-[480px]:pt-7 max-[480px]:pb-[43px]"
+                aria-label="Primary navigation"
+            >
+                <a class="text-[#e8e9e2] no-underline" href="/">
+                    Home
+                </a>
+                <span class="text-[#32342f]">/</span>
+                <a
+                    class="text-[#585a55] no-underline hover:text-[#e8e9e2]"
+                    href="mailto:winneragbonikpeya@gmail.com"
+                >
+                    Contact
+                </a>
+            </nav>
+
+            <section class="pb-16 max-[480px]:pb-12">
+                <div class="flex gap-4 items-center mb-4">
+                    <img
+                        class="size-16 block rounded-full border border-[#343630] object-cover grayscale"
+                        src="/me.jpg"
+                        alt="Winner Agbonikpeya"
+                    />
+                    <h1 class="font-['Newsreader'] text-[clamp(42px,10vw,52px)] leading-[.94] font-normal tracking-[-.055em]">
+                        Winner
+                    </h1>
+                </div>
+                <p class="mb-5 font-['DM_Mono'] text-[9px] tracking-[.11em] text-[#767972] uppercase">
+                    Software engineer
+                </p>
+                <p class="mb-[25px] max-w-[390px] text-[13px] leading-[1.7] text-[#b1b3ac]">
+                    I build backend systems, developer tools, automation
+                    workflows, and practical AI products.
+                </p>
+                <div class="flex gap-5 text-[11px] text-[#b7b9b2]">
+                    <a
+                    class="inline-flex items-center gap-1 no-underline hover:text-[#a78bfa]"
+                        href="https://github.com/winnerx0"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaGithub class="text-[10px]" />
+                        GitHub
+                    </a>
+                    <a
+                    class="inline-flex items-center gap-1 no-underline hover:text-[#a78bfa]"
+                        href="https://www.linkedin.com/in/eromoigbe-agbonikpeya/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaLinkedinIn class="text-[10px]" />
+                        LinkedIn
+                    </a>
+                    <a
+                    class="inline-flex items-center gap-1 no-underline hover:text-[#a78bfa]"
+                        href="https://x.com/winnerx0"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <FaXTwitter class="text-[10px]" />
+                        Twitter
+                    </a>
+                </div>
+                <p class="mt-[29px] flex items-center gap-2 rounded-[4px] border border-[#292b27] px-[14px] py-[13px] text-[10px] text-[#868982]">
+                    <span class="size-1.5 shrink-0 rounded-full bg-[#a78bfa] shadow-[0_0_8px_#a78bfa]"></span>{" "}
+                    Currently exploring agents and the tools around them.
+                </p>
+            </section>
+
+            <section class="pt-px" aria-labelledby="projects-title">
+                <div class="flex items-baseline justify-between border-b border-[#292b27] pb-[17px]">
+                    <h2
+                        id="projects-title"
+                        class="m-0 font-['Newsreader'] text-2xl font-normal tracking-[-.035em]"
+                    >
+                        Selected projects
+                    </h2>
+                    <span class="font-['DM_Mono'] text-[9px] text-[#676a63]">
+                        07
+                    </span>
+                </div>
+                <div>
+                    {projects.map((project) => (
+                        <a
+                            class="group block border-b border-[#292b27] px-1 py-[21px] text-inherit no-underline transition-[background,padding] duration-200 hover:bg-[#151713] hover:px-[11px]"
+                            href={project.href}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <h3 class="mb-[5px] font-['Newsreader'] text-[17px] font-normal tracking-[-.025em]">
+                                {project.name}{" "}
+                                <b class="font-['DM_Mono'] text-[11px] font-normal text-[#a78bfa] opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                                    ↗
+                                </b>
+                            </h3>
+                            <p class="mb-2.5 font-['DM_Mono'] text-[8px] tracking-[.11em] text-[#767972] uppercase">
+                                {project.label}
+                            </p>
+                            <p class="m-0 text-[11px] leading-[1.55] text-[#999c95]">
+                                {project.description}
+                            </p>
+                        </a>
+                    ))}
+                </div>
+            </section>
+            <footer class="pt-[25px] font-['DM_Mono'] text-[9px] tracking-[.07em] text-[#52554e] uppercase">
+                © {new Date().getFullYear()} Winner Agbonikpeya
+            </footer>
+        </main>
+    </body>
+</html>
